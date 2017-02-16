@@ -39,7 +39,7 @@ return false
 }'
 
 prompt() {
-client.addResponse('greeting')
+client.addTextResponse('wotchya')
 client.done()
 }
 })
@@ -50,7 +50,7 @@ const handleGoodbye = client.createStep({
   },
 
   prompt() {
-    client.addResponse('goodbye')
+    client.addTextResponse('seeya buddy')
     client.done()
   }
 })
