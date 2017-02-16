@@ -36,7 +36,7 @@ exports.handle = (client) => {
 const handleGreeting = client.createStep({
 satisfied() {
 return false
-}'
+},
 
 prompt() {
 client.addTextResponse('wotchya')
@@ -66,7 +66,7 @@ goodbye: 'goodbye',
     },
     streams: {
 greeting: handleGreeting,
-goodbye: 'handleGoodbye,
+goodbye: handleGoodbye,
       main: 'onboarding',
       onboarding: [sayHello],
       end: [untrained],
