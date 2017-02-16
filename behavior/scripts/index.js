@@ -43,6 +43,7 @@ client.addResponse('greeting')
 client.done()
 }
 })
+
 const handleGoodbye = client.createStep({
   satisfied() {
     return false
